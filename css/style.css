@@ -151,7 +151,7 @@ body {
 }
 
 .container-1 {
-  background: url(/img/background.png);
+  background: url(../img/background.png);
   background-repeat: no-repeat;
   block-size: cover;
   background-position: center;

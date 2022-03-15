@@ -405,20 +405,15 @@ body {
   margin: 3.5rem 0 0.5rem;
 }
 
-.containerwide {
-  max-width: 140rem;
-  margin: 0 auto;
-}
-
 .containerwrapper-1 {
-  width: 100%;
+  max-width: 140rem;
   height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 0 auto;
   margin-bottom: 3rem;
 }
 
@@ -1252,9 +1247,10 @@ body {
 }
 
 .containercards-2 {
-  width: 100%;
+  max-width: 120rem;
   height: 70vh;
   padding: 7rem 3rem;
+  margin: 0 auto;
 }
 .containercards-2 .teamtitle {
   font-size: 4rem;
@@ -1333,11 +1329,12 @@ body {
 
 .container--4 {
   height: 50vh;
-  width: 100%;
+  max-width: 120rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
+  padding: 3rem 0;
 }
 .container--4 .card {
   width: 30rem;
@@ -1879,7 +1876,7 @@ body {
   height: 100%;
 }
 .container--20 .box__desc {
-  font-size: 3rem;
+  font-size: 2rem;
   display: block;
   text-align: center;
   height: 4rem;

@@ -1,4 +1,6 @@
+
 .container--8 {
+    max-width: 120rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -104,12 +106,6 @@
     }
 
 
-
-
-
-
-
-
 }
 
 
@@ -125,7 +121,7 @@
     position: relative;
 
     .row--10 {
-        max-width: 140rem;
+        max-width: 120rem;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -251,10 +247,6 @@
 
 
     }
-
-
-
-
 }
 
 
@@ -368,9 +360,6 @@
         }
     }
 
-
-
-
 }
 
 
@@ -483,11 +472,6 @@
 
         }
     }
-
-
-
-
-
 
 }
 

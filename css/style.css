@@ -196,10 +196,15 @@ body {
   flex-basis: 49%;
 }
 .wrapper-1 .box__client {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
   position: absolute;
   top: -5rem;
   left: 50%;
   transform: translate(-50%);
+  overflow: hidden;
 }
 .wrapper-1 .box__title {
   font-size: 2.2rem;
@@ -1490,6 +1495,7 @@ body {
 }
 
 .container--8 {
+  max-width: 120rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1582,7 +1588,7 @@ body {
   position: relative;
 }
 .container--10 .row--10 {
-  max-width: 140rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

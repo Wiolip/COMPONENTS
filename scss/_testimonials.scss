@@ -49,19 +49,26 @@
         padding: 0 3.5rem;
         margin-top: 10rem;
 
+
         &__body {
             background-color: #fff;
             border-radius: 1rem;
             position: relative;
             flex-basis: 49%;
 
+
         }
 
         &__client {
+            display: block;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
             position: absolute;
             top: -5rem;
             left: 50%;
             transform: translate(-50%);
+            overflow: hidden;
 
         }
 

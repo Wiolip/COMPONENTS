@@ -1,55 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    color: #555;
-    background-color: #fcfcfc;
-}
-
-
-.nav {
-
-    height: 30rem;
-    padding: 7rem auto;
-    background-color: #b5b5c4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    button {
-        border-style: none;
-        border-radius: .7rem;
-        padding: 2rem 3rem;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        color: #fff;
-        background-color: rgb(18, 18, 46);
-        transition: .5s ease-in-out;
-
-        &:hover {
-            background-color: rgb(101, 11, 131);
-        }
-    }
-    h1{
-        margin-bottom: 3rem;
-        font-size: 4rem;
-        color: rgb(18, 18, 46);
-
-    }
-
-}
-
+@import 'index';
 @import 'mixins';
 @import 'testimonials';
 @import 'cards';

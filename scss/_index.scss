@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: rgb(46, 49, 56);
+    background-color: #fcfcfc;
+}
+
+
+.nav {
+
+    height: 30rem;
+    padding: 7rem auto;
+    background-color: #b5b5c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        border-style: none;
+        border-radius: .7rem;
+        padding: 2rem 3rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: rgb(18, 18, 46);
+        transition: .5s ease-in-out;
+
+        &:hover {
+            background-color: rgb(101, 11, 131);
+        }
+    }
+
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        color: rgb(18, 18, 46);
+
+    }
+
+}
+
+
+
+.container--0 {
+    width: 100%;
+
+    .grid {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        position: relative;
+        background-color: rgb(18, 18, 46);
+
+        & div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            min-height: 16rem;
+            cursor: pointer;
+            overflow: hidden;
+            transition: filter, backdrop-filter, opacity, color .3s ease-in-out;
+            padding: 3rem;
+            position: relative;
+            background-color: rgb(18, 18, 46);
+            background-image: url('https://myownphotostory.pl/wp-content/uploads/2020/10/Punkty-widokowe-na-Tatry-_WL50581-1050x788.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+
+            & a {
+                text-decoration: none;
+                font-size: 2rem;
+                font-weight: 600;
+                color: #fcfcfc;
+                border: .1rem solid rgb(18, 18, 46);
+                padding: 1rem 1.5rem;
+                border-radius: .7rem;
+                background-color: rgb(18, 18, 46);
+
+            }
+
+            & .overlay {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background: linear-gradient(180deg, hsl(0, 0%, 0%, 0) 5%, hsl(0, 0%, 0%, .8));
+                backdrop-filter: blur(6px);
+                transition: opacity .4s ease-in-out;
+                z-index: -1;
+
+            }
+
+
+            &:hover>.overlay {
+                opacity: 1;
+            }
+
+            &:hover {
+                filter: brightness(1.2);
+
+                a {
+                    border: 1px solid rgb(101, 11, 131);
+                    background-color: rgb(101, 11, 131);
+                }
+            }
+
+
+        }
+
+        &>div:nth-of-type(1) {
+            grid-column: 1/3;
+        }
+
+        &>div:nth-of-type(2) {
+            grid-column: 3/5;
+            grid-row: 1/3;
+        }
+
+        &>div:nth-of-type(4) {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+
+        &>div:nth-of-type(9) {
+            grid-column: 2/4;
+            grid-row: 4/5;
+        }
+
+    }
+
+    @media screen and (max-width: 840px) {
+        .grid {
+            height: auto;
+            grid-template-columns: repeat(2, 1fr);
+
+            & div {
+                min-height: auto;
+                aspect-ratio: 1 / 1;
+                width: 100%;
+            }
+
+            &>div:nth-of-type(1) {
+                grid-column: auto;
+            }
+
+            &>div:nth-of-type(2) {
+                grid-column: auto;
+                grid-row: auto;
+            }
+
+            &>div:nth-of-type(4) {
+                grid-column: auto;
+                grid-row: auto;
+            }
+        }
+    }
+}

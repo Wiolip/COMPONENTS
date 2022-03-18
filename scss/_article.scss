@@ -1,10 +1,13 @@
 
+// ::::::: article 1::::::
+
+
 .container--8 {
     max-width: 120rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 7rem auto;
+    margin: 0 auto;
     padding: 3rem;
 
 
@@ -111,13 +114,11 @@
 
 
 
-// ::::::::::: article2:::::::::::
-
-
+// ::::::::::: article2  :::::::::::
 
 .container--10 {
     padding: 7rem 3rem;
-    margin: 7rem auto;
+    margin: 0 auto;
     position: relative;
 
     .row--10 {
@@ -230,7 +231,7 @@
         display: inline-flex;
         position: relative;
         overflow: hidden;
-        
+
 
 
         .article__image {
@@ -252,12 +253,12 @@
 
 
 
-// ::::::: aticle 3:::::::::
+// ::::::: aticle 3  :::::::::
 
 .container__11 {
-    width: 90rem;
-    padding-left: 3rem;
-    margin: 3rem 0;
+   max-width: 120rem;
+
+    margin: 3rem auto;
 
     .row {
         width: 100%;
@@ -369,11 +370,11 @@
 
 .container--16 {
     padding: 7rem 3rem;
-    margin: 7rem auto;
+    margin: 0 auto;
     position: relative;
 
     .row--16 {
-        max-width: 140rem;
+        max-width: 120rem;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));

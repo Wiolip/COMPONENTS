@@ -96,7 +96,8 @@
 // ::::::::::::: TESTIMONIALS 2 :::::::::::::::
 
 .testimonials-1 {
-    width: 100%;
+   max-width: 120rem;
+   margin: 0 auto;
     padding: 0 3rem;
     text-align: center;
 
@@ -177,7 +178,7 @@
     }
 
     .container-2 {
-        max-width: 140rem;
+        max-width: 120rem;
         margin: 3rem auto;
         padding: 0 3rem;
     }

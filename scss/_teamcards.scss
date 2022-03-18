@@ -1,11 +1,10 @@
-// ::::::::::: cards 2 ::::::::::;
+// ::::::::::: team 1 ::::::::::;
 
 
 .containercards-2 {
     max-width: 120rem;
-
-    padding: 7rem 3rem;
-    margin: 7rem auto;
+    padding: 3rem;
+    margin: 0 auto;
 
     .teamtitle {
         font-size: 4rem;
@@ -107,17 +106,16 @@
 
 
 
-// ::::::::::: cards 3 ::::::::::;
+// ::::::::::: team 2 ::::::::::;
 
 
 .container--4 {
-   
     max-width: 120rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 7rem auto;
-    padding: 3rem 0;
+    margin: 0 auto;
+    padding: 7rem 0;
 
     .card {
         width: 30rem;
@@ -241,7 +239,7 @@
 
 
 
-// :::::::::::team 1 :::::::::::::::::::
+// :::::::::::   team 3 :::::::::::::::::::
 
 
 .container--15 {
@@ -333,4 +331,4 @@
 }
 
 
-// :::::::::::team 2 :::::::::::::::::::
+// :::::::::::team 4 :::::::::::::::::::

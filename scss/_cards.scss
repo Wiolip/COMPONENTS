@@ -3,14 +3,14 @@
 
 .containerwrapper-1 {
     max-width: 140rem;
-    height: 90vh;
+    padding: 3rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    row-gap: 10rem;
 
 
 }
@@ -112,7 +112,7 @@
 
 
 
-// :::::::::: cards5 :::::::::::::
+// :::::::::: cards2:::::::::::::
 
 .container--5 {
     max-width: 120rem;
@@ -163,7 +163,7 @@
     background-color: #27292f;
     position: relative;
     padding: 7rem 0;
-    margin: 7rem 0;
+
 
     &__content {
         position: relative;
@@ -202,15 +202,15 @@
 
 
 
-// :::::::: cards6 ::::::::
+// :::::::: cards3 ::::::::
 
 
 
 .campus {
-    width: 80%;
+    max-width: 120rem;
     margin: auto;
     text-align: center;
-    padding: 10rem 0;
+
 
     h2 {
         font-size: 5rem;
@@ -274,9 +274,7 @@
 
 
 
-// :::::: cards 7 ::::::::
-
-
+// :::::: cards 4 ::::::::
 
 
 .container--7 {
@@ -321,12 +319,11 @@
 }
 
 
-// :::::: cards 8 ::::::::
+// :::::: cards 5 ::::::::
 
 
 .container--13 {
-    max-width: 1200rem;
-    margin: 7rem 0;
+    max-width: 120rem;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -347,9 +344,6 @@
         &:nth-child(3) .cardss__icon {
             background: #D46EAD;
         }
-
-
-
 
 
         &__face {
@@ -458,13 +452,13 @@
 
 
 
-// :::::: cards 9 ::::::::
+// :::::: cards 6 ::::::::
 
 
 .container--14 {
-    max-width: 1200rem;
+    width: 100%;
     margin: 5rem 0;
-    padding: 12rem 0;
+    padding: 10rem 0;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -608,11 +602,11 @@
 }
 
 
-// :::::::: cards 10 :::::::::
+// :::::::: cards 7 :::::::::
 
 .container--12 {
-    padding: 7rem 3rem;
-    margin: 7rem auto;
+    max-width: 120rem;
+    margin: 2rem auto;
     position: relative;
 
     .row--12 {
@@ -712,13 +706,13 @@
 
 
 
-// :::::::: cards 11 :::::::::
+// :::::::: cards 8 :::::::::
 
 .container--17 {
 
-    max-width: 1200px;
+    max-width: 120rem;
     padding: 0 3rem;
-    margin: 7rem auto;
+    margin: 2rem auto;
 
     .cards {
         display: grid;
@@ -745,7 +739,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 20;
+
             width: 50%;
             height: 100%;
             background-color: rgba(#ffffff, 0.1);
@@ -808,11 +802,10 @@
             justify-content: center;
             width: 5rem;
             height: 5rem;
-            background-color: #ffffff;
             border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(#000000, 0.2);
             transition: 0.5s;
             cursor: pointer;
+
 
 
             &::before {
@@ -842,6 +835,7 @@
                     opacity: 1;
                     visibility: visible;
 
+
                 }
 
             }
@@ -861,7 +855,7 @@
         }
 
         &__content {
-            z-index: 1;
+            z-index: 2;
             padding: 2rem;
             color: #fff;
             opacity: 0;
@@ -869,6 +863,9 @@
             box-sizing: border-box;
             pointer-events: none;
             transition: .5s;
+            h2{
+                color: #fcfcfc;
+            }
 
         }
     }

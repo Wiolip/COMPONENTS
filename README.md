@@ -1,4 +1,4 @@
-# Collection of atomic blocks design
+# Collection of atomic blocks design - in progress!
 
 # I used:
 

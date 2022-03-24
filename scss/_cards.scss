@@ -1,7 +1,186 @@
-// ::::::::::: cards 1 ::::::::::;
+// :::::::: cards1 campus ::::::::
 
 
-.containerwrapper-1 {
+.campus {
+    max-width: 120rem;
+    margin: 7rem auto;
+    padding: 0 3rem;
+    text-align: center;
+
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    &__row {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    &__col {
+        flex-basis: 32%;
+        height: 50rem;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        position: relative;
+        overflow: hidden;
+
+        @include mq(s) {
+            flex-basis: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+
+        }
+    }
+
+    &__layer {
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+
+        &:hover {
+            background: rgba(776, 0, 0, 0.7);
+
+            h3 {
+                bottom: 49%;
+                opacity: 1;
+            }
+        }
+    }
+
+    h3 {
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 2.6rem;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        transition: 0.5s;
+    }
+
+}
+
+
+
+
+
+// :::::::::: cards2 mops:::::::::::::
+
+.containercards--2 {
+    max-width: 120rem;
+    padding: 0 5rem;
+    margin: 0 auto;
+    position: relative;
+
+    .image {
+        width: 100%;
+
+    }
+
+    .imagebox {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 55rem;
+        border-radius: 1.2rem;
+
+        &__left {
+            background: url('https://myownphotostory.pl/wp-content/uploads/2022/01/home-myownphotostory1.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__right {
+            background: url('https://myownphotostory.pl/wp-content/uploads/2022/01/home-myownphotostory2.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
+}
+
+.row--5 {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    position: relative;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include mq(s) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+
+.cardsfull {
+    background-color: #27292f;
+    position: relative;
+    padding: 7rem 0;
+
+
+    &__content {
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    &__layer {
+        position: absolute;
+        background-color: #27292f;
+        bottom: 0;
+        left: 0;
+        right: 5rem;
+        padding: 5rem;
+        margin: 0;
+        transition: .5s ease-in-out;
+        overflow: hidden;
+
+        &:hover {
+            background-color: #ca4c25;
+            bottom: 0;
+            left: -2rem;
+            right: 2rem;
+        }
+    }
+
+    &__title {
+        color: #fcfcfc;
+    }
+
+    &__subtitle {
+        color: #fcfcfc;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+
+// ::::::::::: cards 3  dogs::::::::::;
+
+
+.containercards--3 {
     max-width: 140rem;
     padding: 3rem 0;
     display: flex;
@@ -9,7 +188,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 7rem auto;
     row-gap: 10rem;
 
 
@@ -88,241 +267,14 @@
     }
 
 
-    &:nth-child(4)::before,
-    &:nth-child(5)::before,
-    &:nth-child(6)::before {
-        background-color: #A46B52;
-        bottom: 2rem;
-        right: 2rem;
-    }
-
-    &:nth-child(4):hover,
-    &:nth-child(5):hover,
-    &:nth-child(6):hover {
-
-
-        &::before {
-            bottom: 4rem;
-            right: 3rem;
-        }
-
-    }
-
 }
 
 
 
-// :::::::::: cards2:::::::::::::
-
-.container--5 {
-    max-width: 120rem;
-    padding: 0 5rem;
-    margin: 0 auto;
-    position: relative;
-
-    .image {
-        width: 100%;
-
-    }
-
-    .imagebox {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 55rem;
-        border-radius: 1.2rem;
-
-        &__left {
-            background: url('https://myownphotostory.pl/wp-content/uploads/2022/01/home-myownphotostory1.jpeg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        &__right {
-            background: url('https://myownphotostory.pl/wp-content/uploads/2022/01/home-myownphotostory2.jpeg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-    }
-}
-
-.row--5 {
-    max-width: 100rem;
-    margin: 0 auto;
-    display: grid;
-    gap: 2rem;
-    position: relative;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+// :::::: cards 4  about ::::::::
 
 
-.cardsfull {
-    background-color: #27292f;
-    position: relative;
-    padding: 7rem 0;
-
-
-    &__content {
-        position: relative;
-        margin-bottom: 0;
-    }
-
-    &__layer {
-        position: absolute;
-        background-color: #27292f;
-        bottom: 0;
-        left: 0;
-        right: 5rem;
-        padding: 5rem;
-        margin: 0;
-        transition: .5s ease-in-out;
-        overflow: hidden;
-
-        &:hover {
-            background-color: #ca4c25;
-            bottom: 0;
-            left: -2rem;
-            right: 2rem;
-        }
-    }
-
-    &__title {
-        color: #fcfcfc;
-    }
-
-    &__subtitle {
-        color: #fcfcfc;
-        margin-bottom: 2rem;
-    }
-
-}
-
-
-
-// :::::::: cards3 ::::::::
-
-
-
-.campus {
-    max-width: 120rem;
-    margin: auto;
-    text-align: center;
-
-
-    h2 {
-        font-size: 5rem;
-    }
-
-    p {
-        text-align: center;
-    }
-
-    &__row {
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__col {
-        flex-basis: 32%;
-        border-radius: 1rem;
-        margin-bottom: 3rem;
-        position: relative;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            display: block;
-        }
-    }
-
-    &__layer {
-        background: transparent;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: 0.5s;
-
-        &:hover {
-            background: rgba(776, 0, 0, 0.7);
-
-            h3 {
-                bottom: 49%;
-                opacity: 1;
-            }
-        }
-    }
-
-    h3 {
-        width: 100%;
-        font-weight: 500;
-        color: #fff;
-        font-size: 2.6rem;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
-        transition: 0.5s;
-    }
-
-}
-
-
-
-// :::::: cards 4 ::::::::
-
-
-.container--7 {
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    display: grid;
-    place-items: center;
-}
-
-.wrapper--7 {
-    max-width: 100rem;
-    max-height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
-    &:hover {
-        img {
-            opacity: 0.3;
-        }
-    }
-
-    img {
-        width: 30%;
-        height: 37rem;
-        object-fit: cover;
-
-        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
-        transform-origin: center;
-        transform: perspective(800px) rotateY(25deg);
-        transition: 0.5s;
-
-        &:hover {
-            transform: perspective(800px) rotateY(0deg);
-            opacity: 1;
-        }
-    }
-
-
-}
-
-
-// :::::: cards 5 ::::::::
-
-
-.container--13 {
+.containercards--4 {
     max-width: 120rem;
     position: relative;
     display: flex;
@@ -452,10 +404,10 @@
 
 
 
-// :::::: cards 6 ::::::::
+// :::::: cards 5 about black ::::::::
 
 
-.container--14 {
+.containercards--5 {
     width: 100%;
     margin: 5rem 0;
     padding: 10rem 0;
@@ -602,27 +554,35 @@
 }
 
 
-// :::::::: cards 7 :::::::::
+// :::::::: cards 6 the beach :::::::::
 
-.container--12 {
-    max-width: 120rem;
-    margin: 2rem auto;
+.containercards--6 {
+
     position: relative;
 
     .row--12 {
-        max-width: 140rem;
-        margin: 0 auto;
+        max-width: 120rem;
+        margin: 2rem auto;
+        padding: 0 3rem;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 2rem;
         position: relative;
+
+        @include mq(m) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        @include mq(s) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
     }
 
 
     .block {
         position: relative;
         display: flex;
-        height: 60rem;
+        height: 50rem;
         border-radius: 1rem;
         box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.12), 0 0.1rem .2rem rgba(0, 0, 0, 0.24);
         transition: 1s ease-in-out;
@@ -664,10 +624,10 @@
 
         &__body {
             position: absolute;
-            bottom: -47%;
+            bottom: -57%;
             left: 0;
             width: 100%;
-            height: 60%;
+            height: 70%;
             margin: 0;
             padding: 3rem;
             background-color: rgba(black, 0.85);
@@ -706,9 +666,9 @@
 
 
 
-// :::::::: cards 8 :::::::::
+// :::::::: cards 7 :::::::::
 
-.container--17 {
+.containercards--7 {
 
     max-width: 120rem;
     padding: 0 3rem;
@@ -721,9 +681,15 @@
         margin: 0;
         padding: 0;
 
+        @include mq(s) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         &__item {
             height: 40rem;
         }
+
+
 
     }
 
@@ -863,7 +829,8 @@
             box-sizing: border-box;
             pointer-events: none;
             transition: .5s;
-            h2{
+
+            h2 {
                 color: #fcfcfc;
             }
 
@@ -872,16 +839,17 @@
 
 }
 
-// :::::::: cards 12 :::::::::
+// :::::::: cards 8 :::::::::
 
 $imgurl--1: "https://images.unsplash.com/uploads/14128324071271c853818/3765c625?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGxvbmVseSUyMHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60";
 $imgurl--2: "https://images.unsplash.com/photo-1611304366736-c5a35154bfac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YXJjaGl0ZWN1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60";
 
 
-.container--18 {
+.containercards--8 {
     width: 100%;
     height: 60rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -1068,11 +1036,58 @@ $imgurl--2: "https://images.unsplash.com/photo-1611304366736-c5a35154bfac?ixlib=
 
 
 
+// :::::: cards 9 ::::::::
 
 
+.containercards--9 {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper--7 {
+padding: 10rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @include mq(s){
+        gap: 15rem;
+    }
+
+    &:hover {
+        img {
+            opacity: 0.3;
+        }
+    }
+
+    img {
+        width: 30%;
+        height: 37rem;
+        display: block;
+        object-fit: cover;
+        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+        transform-origin: center;
+        transform: perspective(800px) rotateY(25deg);
+        transition: 0.5s;
+
+        &:hover {
+            transform: perspective(800px) rotateY(0deg);
+            opacity: 1;
+        }
+        @include mq(s){
+            width: 100%;
+           max-height: 50%;
+
+        }
+
+    }
 
 
-
+}
 
 
 

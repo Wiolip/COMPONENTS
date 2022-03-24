@@ -1,0 +1,20 @@
+$breakpoints: (
+    s: 767px,
+    m: 992px,
+    l: 1200px,
+
+);
+
+@mixin mq($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: #{ map-get( $breakpoints, $breakpoint ) }) {
+            @content;
+        }
+    }
+
+    @else if type_of($breakpoint)==number and unit($breakpoint)==px or unit($breakpoint)==em or unit($breakpoint)==rem {
+        @media (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}

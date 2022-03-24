@@ -276,6 +276,7 @@
 
 .containercards--4 {
     max-width: 120rem;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -409,7 +410,7 @@
 
 .containercards--5 {
     width: 100%;
-    margin: 5rem 0;
+    margin: 5rem auto;
     padding: 10rem 0;
     position: relative;
     display: flex;
@@ -419,6 +420,7 @@
     background-color: #27292f;
 
     .cardss {
+
         position: relative;
 
 
@@ -1048,13 +1050,14 @@ $imgurl--2: "https://images.unsplash.com/photo-1611304366736-c5a35154bfac?ixlib=
 }
 
 .wrapper--7 {
-padding: 10rem 5rem;
+    padding: 10rem 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    @include mq(s){
+
+    @include mq(s) {
         gap: 15rem;
     }
 
@@ -1078,9 +1081,10 @@ padding: 10rem 5rem;
             transform: perspective(800px) rotateY(0deg);
             opacity: 1;
         }
-        @include mq(s){
+
+        @include mq(s) {
             width: 100%;
-           max-height: 50%;
+            max-height: 50%;
 
         }
 

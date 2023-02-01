@@ -103,14 +103,14 @@
         border-radius: 1.2rem;
 
         &__left {
-            background: url('https://myownphotostory.pl/wp-content/uploads/2022/01/home-myownphotostory1.jpeg');
+            background: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         &__right {
-            background: url('https://myownphotostory.pl/wp-content/uploads/2022/01/home-myownphotostory2.jpeg');
+            background: url('https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -1038,112 +1038,3 @@ $imgurl--2: "https://images.unsplash.com/photo-1611304366736-c5a35154bfac?ixlib=
 
 
 
-// :::::: cards 9 ::::::::
-
-
-.containercards--9 {
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper--7 {
-    padding: 10rem 5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
-    @include mq(s) {
-        gap: 15rem;
-    }
-
-    &:hover {
-        img {
-            opacity: 0.3;
-        }
-    }
-
-    img {
-        width: 30%;
-        height: 37rem;
-        display: block;
-        object-fit: cover;
-        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
-        transform-origin: center;
-        transform: perspective(800px) rotateY(25deg);
-        transition: 0.5s;
-
-        &:hover {
-            transform: perspective(800px) rotateY(0deg);
-            opacity: 1;
-        }
-
-        @include mq(s) {
-            width: 100%;
-            max-height: 50%;
-
-        }
-
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-// ::::::::::: cards  ::::::::::;
-
-.containrcards-n {
-    width: 100%;
-    padding: 7rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-
-    .cardbox {
-        flex-basis: 32%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 3rem;
-        background-color: #fff;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        border-left: 8px transparent;
-        transition: 1s ease-in-out;
-
-
-        &:hover {
-            border-left: 8px solid red;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        }
-
-        &__btn {
-            display: block;
-            border: none;
-            background: red;
-            color: #f0f0f2;
-            border-radius: .5rempx;
-            padding: 1rem 1.3rem;
-            margin-top: 3rem;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            align-self: flex-end;
-
-        }
-
-        &__text {
-            margin-bottom: auto;
-        }
-    }
-}

@@ -2322,22 +2322,22 @@ body {
   background-repeat: no-repeat;
 }
 .containerslider--1 .slideshow__element:first-child {
-  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/11/06/horseshoebend_WL48775-HDR-1050x788.jpg");
+  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/11/horseshoebend_WL48775-HDR-1200x900.jpg");
 }
 .containerslider--1 .slideshow__element:nth-child(2) {
-  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/11/06/Kanion-Antylopy-USA_WL48450-HDR-1050x788.jpg");
+  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/11/Kanion-Antylopy-USA_WL48467-1.jpg");
   animation-delay: 6s;
 }
 .containerslider--1 .slideshow__element:nth-child(3) {
-  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/09/06/Arches-NPv_WL60460-1050x788.jpg");
+  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/09/Arches-NPv_WL60460.jpg");
   animation-delay: 12s;
 }
 .containerslider--1 .slideshow__element:nth-child(4) {
-  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/06/06/Joshua-Tree-USA-cholla-garden_WL26167-1050x788.jpg");
+  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/06/Joshua-Tree-USA_WL25938-1200x900.jpg");
   animation-delay: 18s;
 }
 .containerslider--1 .slideshow__element:nth-child(5) {
-  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/06/06/Joshua-Tree-USA_WL25938-1050x788.jpg");
+  background-image: url("https://myownphotostory.pl/wp-content/uploads/2018/06/cholla-garden-_WL26536.jpg");
   animation-delay: 24s;
 }
 .containerslider--1 .slideshow h2 {
